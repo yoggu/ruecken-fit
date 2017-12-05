@@ -1,0 +1,46 @@
+@import "Color";
+@import "List";
+@import "Grid";
+@import "Table";
+
+
+
+*,*::after,*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  color: $color-dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+    font-size: 1.65rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+svg {
+  max-width: 100%;
+}

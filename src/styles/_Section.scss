@@ -1,0 +1,60 @@
+.section-title {
+  padding: 6rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    padding: 10rem 0 2rem;
+  }
+
+  &.contact {
+    padding-bottom: 0;
+  }
+
+  .icon {
+    display: flex;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .show-icon {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .icon-text {
+    text-align: center;
+    padding: 2.5rem 0;
+    width: 100%;
+
+    &.offers {
+      color: $color-initial;
+      background-color: $color-primary;
+      position: relative;
+    }
+
+    &.location {
+      background-color: $color-tertiary;
+      color: $color-initial;
+    }
+
+    &.price {
+      background-color: $color-quaternary;
+      color: $color-initial;
+    }
+
+    &.about {
+      background-color: $color-secondary;
+      color: $color-initial;
+    }
+
+    &.contact {
+      background-color: $color-senary;
+      color: $color-initial;
+      margin-bottom: -1px;
+    }
+  }
+}

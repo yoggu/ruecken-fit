@@ -1,0 +1,139 @@
+.navigation{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: right;
+  transition: top 0.6s;
+
+  .container-nav {
+    @extend .container;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 100%;
+
+  .brand {
+    order: 0;
+    background-color: $color-initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+
+    @include desktop {
+      visibility: hidden;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .show{
+    transform: translateY(99%) !important;
+
+    @include desktop {
+      transform: none !important;
+    }
+  }
+
+  .navigation-list {
+    order:1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 1;
+    transition: transform 0.2s;
+    background-color: $color-initial;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translate(0);
+
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: transparent;
+    }
+
+    .brand-desktop {
+      display: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem;
+      margin-right: auto;
+
+      @include desktop{
+        display: flex;
+        color: $color-initial;
+      }
+    }
+
+    .navigation-item {
+  		max-width: 100%;
+      justify-content: left;
+      display: flex;
+
+      @include desktop{
+        padding: 0 1.0rem;
+      }
+
+      .navigation-link {
+        font-size: 1.5rem;
+        line-height: 1;
+        flex: 1 1 auto;
+        padding: 1rem 0 1rem 1.2rem ;
+        text-decoration: none;
+        color: $color-dark;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        &::after{
+          content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : 0;
+        height  : 1px;
+        width   : 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        border-bottom: 3px solid $color-primary;
+        transition: transform 0.2s;
+        }
+
+        @include desktop {
+          padding: 1rem 0.5rem;
+          color: $color-initial;
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          &::after{
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+.navscrolled {
+  @include desktop{
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    background-color: $color-initial;
+  }
+  }
+
+  .navlinkscrolled {
+    @include desktop{
+      color: #000 !important;
+    }
+  }

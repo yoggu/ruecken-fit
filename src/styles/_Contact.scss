@@ -1,0 +1,22 @@
+.contact-text {
+  text-align: center;
+  background-color: $color-senary;
+  padding: 0 2rem 12rem;
+  color: $color-initial;
+
+  p {
+    line-height: 1.5;
+  }
+
+
+  .fat {
+    padding-top: 2rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+  }
+
+  a {
+    color: $color-initial;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,112 @@
+
+.offer-section {
+  vertical-align: middle;
+  line-height: 2rem;
+  color: $color-initial;
+  padding-left: 1rem;
+  position: relative;
+  @include desktop{
+    padding-left:2rem;
+  }
+
+  h3 {
+    padding: 1rem 0;
+  }
+
+  &.rueckenfit{
+    background-color: $color-primary;
+    margin-top: 0;
+  }
+
+  &.fitgym{
+    background-color: $color-primary;
+  }
+
+  &.rueckengym{
+    background-color: $color-primary;
+  }
+  &.osteoporosegym{
+    background-color: $color-primary;
+  }
+
+}
+
+.offer-img {
+  max-width: 100%;
+
+  @include desktop{
+    padding:0 2rem;
+  }
+}
+
+.offer-text {
+  padding: 2rem 1rem;
+  max-width: 600px;
+
+  @include desktop{
+    padding: 2rem;
+  }
+}
+
+.offer-table {
+  margin-bottom: 3rem;
+
+  @include desktop{
+    padding: 2rem;
+  }
+
+  th{
+    color: $color-initial;
+  }
+
+  &.rueckenfit {
+    th{
+      background-color: $color-primary;
+    }
+  }
+
+  &.fitgym {
+    th{
+      background-color: $color-primary;
+    }
+  }
+
+  &.rueckengym {
+    th{
+      background-color: $color-primary;
+    }
+  }
+
+  &.osteoporosegym {
+    th{
+      background-color: $color-primary;
+    }
+  }
+}
+
+.circle {
+    display: none;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    //background: $color-quaternary;
+    color: $color-initial;
+    font-weight: 500;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: 0rem;
+    top: -2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    //box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    // p {
+    //   transform: rotateZ(10deg);
+    // }
+
+    @include desktop {
+      display: block;
+    }
+}

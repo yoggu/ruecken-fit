@@ -1,0 +1,52 @@
+.location-section {
+  margin-bottom: 1rem;
+}
+
+.map-wrapper {
+  height: 500px;
+
+  @include desktop {
+    padding: 0 2rem;
+  }
+
+  .map {
+    height: 429px;
+    width: 100%;
+  }
+}
+
+.location-title {
+  position: relative;
+  padding: 1rem 0 1rem 1rem;
+  //margin-right: 3.5rem;
+  line-height: 2rem;
+  color: $color-initial;
+  background-color: $color-tertiary;
+
+  @include desktop {
+    padding-left: 2rem;
+  }
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0px;
+  //   left: 100%;
+  //   width: 0;
+  //   height: 0;
+  //   border: 26px solid transparent;
+  //   border-left: 25px solid $color-tertiary;
+  // }
+}
+
+// .location-section {
+//   margin-bottom: 2rem;
+// }
+
+.location-img {
+  max-width: 100%;
+
+  @include desktop {
+    padding: 0 2rem;
+  }
+}
