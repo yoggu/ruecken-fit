@@ -2,8 +2,8 @@
   background: url("assets/img/web/fitgym-high.jpg") no-repeat center center fixed;
   min-height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: flex-end;
   flex-wrap: wrap;
   background-attachment: scroll;
 
@@ -18,33 +18,35 @@
 
   .start-text {
     color: $color-initial;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0 , 0, 0, 0.3), 0 1px 7px rgba(0 , 0, 0, 0.1), 0 1px 20px rgba(0 , 0, 0, 0.3);
+    text-align: left;
+    //text-shadow: 0 1px 2px rgba(0 , 0, 0, 0.3), 0 1px 7px rgba(0 , 0, 0, 0.1), 0 1px 20px rgba(0 , 0, 0, 0.3);
+    padding: 20px;
 
     @include desktop {
-      padding-bottom: 8rem;
+      margin-bottom: 40px;
+      padding-right: 20px;
+      max-width: 500px;
+      padding-left: 50px;
+      //background-color: #147BC9;
+      padding: 20px 50px;
     }
 
     h1 {
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 700;
       line-height: 1.5;
-      word-spacing: 3.0rem;
+      letter-spacing: 0.5rem;
 
       @include desktop {
-        font-size: 3.5rem;
-        font-weight: 600;
+        font-size: 3rem;
       }
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
       line-height: 1.5;
-      font-weight: 700;
+      font-weight: 400;
     }
   }
-}
-
-.darken {
-  background-image: linear-gradient(rgba(119, 118, 143, 0.3), rgba(0, 4, 9, 0.3)), url(/assets/img/web/fitgym-high.jpg)
-
 }
