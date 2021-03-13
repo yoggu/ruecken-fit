@@ -1,12 +1,12 @@
 .section-title {
-  padding: 6rem 0 2rem;
+  padding: 6rem 0 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   @include desktop {
-    padding: 10rem 0 2rem;
+    padding: 10rem 0 5rem;
   }
 
   &.contact {
@@ -32,27 +32,27 @@
 
     &.offers {
       color: $color-initial;
-      background-color: $color-primary;
+      background-color: $color-secondary;
       position: relative;
     }
 
     &.location {
-      background-color: $color-tertiary;
+      background-color: $color-primary;
       color: $color-initial;
     }
 
     &.price {
-      background-color: $color-quaternary;
-      color: $color-initial;
-    }
-
-    &.about {
       background-color: $color-secondary;
       color: $color-initial;
     }
 
+    &.about {
+      background-color: $color-primary;
+      color: $color-initial;
+    }
+
     &.contact {
-      background-color: $color-senary;
+      background-color: $color-primary;
       color: $color-initial;
       margin-bottom: -1px;
     }

@@ -45,11 +45,6 @@
 }
 
 .darken {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("assets/img/web/fitgym-high.jpg");
+  background-image: linear-gradient(rgba(119, 118, 143, 0.3), rgba(0, 4, 9, 0.3)), url(/assets/img/web/fitgym-high.jpg)
 
 }

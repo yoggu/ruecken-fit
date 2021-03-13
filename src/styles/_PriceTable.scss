@@ -13,30 +13,28 @@
 
 .card {
   height: 18rem;
-  background-color: $color-initial;
-  border: solid 1px $color-quinary;
-  margin-bottom: 5rem;
+  background-color: $color-secondary;
+  color: $color-initial;
+  box-shadow: 3px 9px 13px 0 rgba(163,163,163,0.55);
+  margin: 0 1rem 5rem 2rem;
   border-radius: 15px;
   text-align: center;
   @include desktop {
     border-style: none;
-    border-right: solid 1px #FAFAFA;
-    border-bottom: solid 1px $color-quinary;
-    border-radius: 15px 15px 0 0;
 
     > p {
       display: none;
     }
 
-    &.right {
-      border-bottom-right-radius: 15px;
-      border-right: solid 1px $color-quinary;
-    }
+    // &.right {
+    //   border-bottom-right-radius: 15px;
+    //   border-right: solid 1px $color-dark;
+    // }
 
-    &.left {
-      border-bottom-left-radius: 15px;
-      border-left: solid 1px $color-quinary;
-    }
+    // &.left {
+    //   border-bottom-left-radius: 15px;
+    //   border-left: solid 1px $color-dark;
+    // }
   }
 
   p {
@@ -46,22 +44,22 @@
   .card-title {
     position: relative;
     height: 9rem;
-    color: $color-initial;
-    background-color: $color-quinary;
+    // color: $color-initial;
+    // background-color: $color-dark;
     border-radius: 14px 14px 0 0;
     text-align: center;
 
     h4 {
-      padding-top: 1rem;
+      padding-top: 2rem;
     }
 
     .card-circle {
       border-radius: 100%;
-      width: 9rem;
+      //width: 9rem;
       height: 9rem;
-      background: $color-quaternary;
-      color: $color-initial;
-      font-weight: 500;
+      //background: $color-initial;
+      //color: $color-dark;
+      font-weight: 600;
       z-index: 1;
       text-align: center;
       position: absolute;
@@ -70,7 +68,7 @@
       left: 0;
       right: 0;
       margin: 0 auto;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
 
       p {
         padding-top: 3rem;

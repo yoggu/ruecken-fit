@@ -98,7 +98,7 @@ window.smoothScroll = function(eID) {
     return;
   }
   var speed = Math.round(distance / 100);
-  if (speed >= 20) speed = 20;
+  if (speed >= 30) speed = 30;
   var step = Math.round(distance / 25);
   var leapY = stopY > startY ? startY + step : startY - step;
   var timer = 0;
