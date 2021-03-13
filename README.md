@@ -1,1 +1,1 @@
-# My project's README
+# simple landing page
