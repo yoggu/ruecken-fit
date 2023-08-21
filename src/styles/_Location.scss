@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
 
   @include desktop {
-    margin: 0 2rem 2rem 2rem;
+    margin: 2rem;
   }
 
   .map {
@@ -20,8 +20,7 @@
   position: relative;
   padding: 1rem 0 1rem 1rem;
   line-height: 2rem;
-  color: $color-initial;
-  background-color: $color-secondary;
+  color: $color-dark;
 
   @include desktop {
     margin: 0 2rem;
