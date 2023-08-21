@@ -16,11 +16,12 @@
   background-color: $color-secondary;
   color: $color-initial;
   box-shadow: 3px 9px 13px 0 rgba(163,163,163,0.55);
-  margin: 0 1rem 5rem 2rem;
+  margin: 0 0 3rem 0;
   border-radius: 15px;
   text-align: center;
   @include desktop {
     border-style: none;
+    margin: 0 1rem 5rem 1rem;
 
     > p {
       display: none;
@@ -44,8 +45,6 @@
   .card-title {
     position: relative;
     height: 9rem;
-    // color: $color-initial;
-    // background-color: $color-dark;
     border-radius: 14px 14px 0 0;
     text-align: center;
 
