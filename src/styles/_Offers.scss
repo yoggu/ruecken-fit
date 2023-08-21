@@ -9,25 +9,6 @@
   @include desktop{
     margin: 0 2rem;
   }
-
-  /**
-  &.rueckenfit{
-    background-color: $color-secondary;
-    margin-top: 0;
-  }
-
-  &.fitgym{
-    background-color: $color-secondary;
-  }
-
-  &.rueckengym{
-    background-color: $color-secondary;
-  }
-  &.osteoporosegym{
-    background-color: $color-secondary;
-  }
-
-  **/
 }
 
 .offer-img {
@@ -36,7 +17,6 @@
 
   img {
     width: 100%;
-    margin-top: 2rem;
   }
 
   @include desktop{
@@ -51,7 +31,7 @@
 
   @include desktop{
     max-width: 600px;
-    padding: 2rem;
+    padding: 0 2rem;
     margin-left: 1rem;
   }
 }
